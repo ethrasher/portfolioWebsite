@@ -1,0 +1,75 @@
+/* CONSTANTS*/
+:root {
+  --color-green1: #BEEEE5;
+  --color-green2: #8DE2D1;
+  --color-green3: #62D7BF;
+  --color-green4: #32C3A6;
+  --color-green5: #1D7261;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+*
+* THE NAV BAR
+*
+*/
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  opacity: 1;
+}
+
+.navbar #navLinks {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar:first-child > div { margin-right: auto; }
+.navbar:last-child > div { margin-left: auto; }
+
+/* Links inside the navbar */
+.navbar #navLinks a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 16px 8px;
+  text-decoration: none;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 12px;
+}
+
+.navbar #logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar #logo img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.navbar #socialLinks {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar #socialLinks img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  padding: 14px 10px;
+}

@@ -1,0 +1,103 @@
+/* CONSTANTS*/
+:root {
+  --color-green1: #BEEEE5;
+  --color-green2: #8DE2D1;
+  --color-green3: #62D7BF;
+  --color-green4: #32C3A6;
+  --color-green5: #1D7261;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+*
+* HELLO WORLD, LIZZY THRASHER
+*
+*/
+#row1 {
+  background-color: var(--color-green3);
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  color: #FFFFFF;
+}
+
+#row1 #HelloWorld {
+  font-size: 50px;
+}
+#row1 #name {
+  font-size: 100px;
+}
+
+
+/*
+*
+* SELF SYNOPSIS
+*
+*/
+#row2 {
+  background-color: var(--color-green1);
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+#row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#row2 #Img1 {
+  background-color: var(--color-green5);
+}
+
+#row2 #Img2 {
+  background-color: var(--color-green5);
+}
+
+#row2 img {
+  margin: 10%;
+  object-fit: cover;
+  width: 80%;
+  height: 350px;
+}
+
+#row2 #SelfDescription p {
+  margin: 5%;
+}
+
+#row2 #SelfDescription p:first-of-type {
+  text-align: center;
+  font-size: 25px;
+}
+
+/*
+*
+* BIO
+*
+*/
+#row3 {
+  padding: 50px;
+  background-image: url('./assets/swirl_bg1-invert.jpg');
+  background-color: var(--color-green2);
+  background-blend-mode: screen;
+}
+
+#row3 #title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#row3 #bio {
+  font-size: 15px;
+  text-align: left;
+}

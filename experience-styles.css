@@ -1,0 +1,106 @@
+/* CONSTANTS*/
+:root {
+  --color1: #D5D5EE;
+  --color2: #ABA6DE;
+  --color3: #8179CD;
+  --color4: #584CBD;
+  --color5: #3D348B;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+* HEADER
+*/
+#header {
+  background-color: var(--color3);
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+/*
+* GENERAL ROW
+*/
+
+.row .column:nth-of-type(1) {
+  float: left;
+  width: 40%;
+}
+
+.row .column:nth-of-type(2) {
+  float: left;
+  width: 55%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row img {
+  margin: 3%;
+  object-fit: contain;
+  width: 350px;
+  height: 350px;
+  margin-left: 15%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.row .column p:nth-of-type(1) {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+/*
+* SPECIFIC ROW
+*/
+
+#MavenMachines {
+  background-image: url('./assets/swirl_bg1.jpg');
+  background-color: var(--color5);
+  background-blend-mode: screen;
+}
+
+#VFA {
+  background-image: url('./assets/swirl_bg1-invert.jpg');
+  background-color: var(--color2);
+  background-blend-mode: screen;
+}
+
+#TA112 {
+  background-image: url('./assets/swirl_bg1-invert.jpg');
+  background-color: var(--color1);
+  background-blend-mode: screen;
+}
+
+#Allston {
+  background-image: url('./assets/swirl_bg1.jpg');
+  background-color: var(--color5);
+  background-blend-mode: screen;
+}
+
+#UoR {
+  background-image: url('./assets/swirl_bg1-invert.jpg');
+  background-color: var(--color2);
+  background-blend-mode: screen;
+}
+
+#RIT {
+  background-image: url('./assets/swirl_bg1-invert.jpg');
+  background-color: var(--color1);
+  background-blend-mode: screen;
+}
