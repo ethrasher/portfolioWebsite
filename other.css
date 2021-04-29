@@ -1,0 +1,105 @@
+/* CONSTANTS*/
+:root {
+  --color1: #F9F0C8;
+  --color2: #F3E191;
+  --color3: #EFD56B;
+  --color4: #EAC534;
+  --color5: #DEB617;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+/*
+* HEADER
+*/
+#header {
+  background-color: var(--color3);
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+/*
+* GENERAL ROW
+*/
+.row {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.row:nth-of-type(4n+2) {
+  background-color: var(--color1);
+}
+
+.row:nth-of-type(4n+3) {
+  background-image: url('./assets/swirl_bg1.jpg');
+  background-color: var(--color5);
+  background-blend-mode: screen;
+}
+
+.row:nth-of-type(4n+1) {
+  background-image: url('./assets/swirl_bg1-invert.jpg');
+  background-color: var(--color2);
+  background-blend-mode: screen;
+}
+
+.row:nth-of-type(4n+0) {
+  background-color: var(--color4);
+}
+
+.row .column:nth-of-type(1) {
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+.row .column:nth-of-type(2) {
+  float: left;
+  width: 55%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row img {
+  object-fit: contain;
+  width: 350px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.row .column p:nth-of-type(1) {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+input[type=submit] {
+  padding-top:7px;
+  padding-bottom:7px;
+  width:200px; 
+  background:#EAC534; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+iframe {
+  object-fit: contain;
+}
